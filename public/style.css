@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+:root {
+    --colorNav: black;
+    --colorHeader: white;
+    --bgHeader: blue;
+    --bgNav: rgb(255, 255, 255);
+    --bgWrapper: rgb(255,255,255);
+    --bgDropdownMenu: #5a66a3;
+    --colorDropdownMenu: white;
+    --hover: #333232;
+}
+html,body {
+    font-family: 'Sarabun', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(241, 241, 241);
+}
+.box-shadow {
+    box-shadow: 1px 1px 10px silver;
+}
+.border-radius {
+    border-radius: 5px;
+}
+#wrapper-container {
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--bgWrapper);
+}
+.grid-main {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    height: 100%;
+}
+.aside {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    height: 100%;
+}
