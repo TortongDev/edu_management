@@ -9,6 +9,11 @@
     --bgDropdownMenu: #5a66a3;
     --colorDropdownMenu: white;
     --hover: #333232;
+    --bgAside: #ffffff;
+    --bgCard: rgb(250, 250, 250);
+    --bgLi: rgb(226, 225, 225);
+    --labelV1: rgb(78, 78, 78);
+    
 }
 html,body {
     font-family: 'Sarabun', sans-serif;
@@ -32,9 +37,10 @@ html,body {
     grid-template-columns: 300px 1fr;
     height: 100%;
 }
-.aside {
-    margin: 10px;
-    padding: 10px;
-    background-color: white;
-    height: 100%;
+label.label-1 {
+    color: var(--labelV1);
+    font-size: 1rem;
+}
+.list-table {
+    margin-block: 30px;
 }
