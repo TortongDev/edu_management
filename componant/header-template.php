@@ -63,15 +63,19 @@
     <h3>Welcome</h3>
 </header>
 <nav class="box-shadow">
-    <ul>
+    <ul class="mobile">
+        <li>Lorem.</li>
+        <li>Lorem, ipsum.</li>
+    </ul>
+    <ul class="desktop">
         <li><a href="index">หน้าหลัก</a></li>
         <li style="position: relative">
-            <a href="teacher">จัดการข้อมูลบุคลากร 
+            <a href="#">จัดการข้อมูลบุคลากร 
                 <i class="fa-solid fa-caret-down"></i>
             </a>
             <ul class="dropdown-menu">
-                <li><a href="#">เพิ่มบุคลากร</a></li>
-                <li><a href="#">จัดกลุ่มบุคลากร</a></li>
+                <li><a href="form-teacher">เพิ่มบุคลากร</a></li>
+                <li><a href="group-teacher">จัดกลุ่มบุคลากร</a></li>
 
             </ul>
         </li>

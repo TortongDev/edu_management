@@ -28,18 +28,27 @@ html,body {
 }
 #section-container {
     margin: 10px;
-    padding: 20px;
+    padding-block: 10px;
+    padding-inline: 20px;
     background-color: var(--bgWrapper);
 }
-#title-container > h3 {
+#section-container > h3 {
     padding: 0;
     margin: 0;
 }
-#title-container > h4 {
+#section-container > h4 {
     padding: 0;
     margin: 0;
 }
-#title-container {
+#box-container > h3 {
+    padding: 0;
+    margin: 0;
+}
+#box-container > h4 {
+    padding: 0;
+    margin: 0;
+}
+#box-container {
     margin: 10px;
     padding-block: 10px;
     padding-inline: 20px;
@@ -71,3 +80,18 @@ th:nth-last-child(1),td:nth-last-child(1) {
 table > * button {
     margin: 2px;
 }
+ul.mobile {
+    display: none !important;
+}
+@media only screen and (max-width: 600px) {
+    .grid-main {
+      grid-template-columns: 1fr;
+
+    }
+    ul.desktop {
+        display: none !important;
+    }
+    ul.mobile {
+        display: block !important;
+    }
+  }

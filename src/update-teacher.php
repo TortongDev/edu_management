@@ -3,7 +3,7 @@
 <?php include ('./componant/aside-template.php'); ?>
 <article>
     <section id="box-container">
-        <h4><i class="fa-solid fa-database"></i> เพิ่มข้อมูลเจ้าหน้าที่ / คุณครู</h4>
+        <h4><i class="fa-solid fa-database"></i> แก้ไขข้อมูลเจ้าหน้าที่ / คุณครู</h4>
     </section>
     <section id="box-container">
         <div class="form-grid-2">

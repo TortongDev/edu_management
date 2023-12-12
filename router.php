@@ -13,7 +13,8 @@
         '/teacher'      => '/src/teacher-management.php',
         '/school'       => '/src/school-management.php',
         '/news'         => '/src/new-update.php',
-        '/form-teacher' => '/src/form-teacher.php'
+        '/form-teacher' => '/src/form-teacher.php',
+        '/group-teacher'=> '/src/group-teacher.php'
     );
     if(array_key_exists( $FILE_NAME,$PACTH)):  // start if ctrl + F name "check1"
         if(file_exists((dirname(__DIR__).'/edu_management'.$PACTH[$FILE_NAME]))): // start if ctrl + F name "check2"
