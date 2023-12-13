@@ -83,6 +83,12 @@ table > * button {
 ul.mobile {
     display: none !important;
 }
+.b {
+    font-weight: bold;
+}
+.line {
+    text-decoration: underline;
+}
 @media only screen and (max-width: 600px) {
     .grid-main {
       grid-template-columns: 1fr;

@@ -60,7 +60,7 @@
 
 </style>
 <header>
-    <h3>Welcome</h3>
+    <h3>Kenji Farm Management</h3>
 </header>
 <nav class="box-shadow">
     <ul class="mobile">
@@ -70,40 +70,33 @@
     <ul class="desktop">
         <li><a href="index">หน้าหลัก</a></li>
         <li style="position: relative">
-            <a href="#">จัดการข้อมูลบุคลากร 
+            <a href="#">จัดการข้อมูลเจ้าหน้าที่
                 <i class="fa-solid fa-caret-down"></i>
             </a>
             <ul class="dropdown-menu">
-                <li><a href="form-teacher">เพิ่มบุคลากร</a></li>
-                <li><a href="group-teacher">จัดกลุ่มบุคลากร</a></li>
+                <li><a href="customer">เพิ่มเจ้าหน้าที่</a></li>
+                <li><a href="group-customer">จัดกลุ่มเจ้าหน้าที่</a></li>
 
             </ul>
         </li>
         <li style="position: relative">
-            <a href="student">จัดการข้อมูลนักเรียน 
+            <a href="student">จัดการข้อมูลสินค้า 
                 <i class="fa-solid fa-caret-down"></i>
             </a>
             <ul class="dropdown-menu">
-                <li>เพิ่มบุคลากร</li>
-                <li>จัดกลุ่มบุคลากร</li>
+                <li>จัดการข้อมูลประเภทสินค้า</li>
+                <li>จัดการข้อมูลสินค้า</li>
+                <li>จัดการข้อมูล Partner</li>
             </ul>
         </li>
         <li style="position: relative">
-            <a href="school">จัดการข้อมูลวิชาเรียน 
+            <a href="school">รายงานข้อมูล 
                 <i class="fa-solid fa-caret-down"></i>
             </a>
             <ul class="dropdown-menu">
-                <li>เพิ่มบุคลากร</li>
-                <li>จัดกลุ่มบุคลากร</li>
-            </ul>
-        </li>
-        <li style="position: relative">
-            <a href="school">จัดการข้อมูลโรงเรียน 
-                <i class="fa-solid fa-caret-down"></i>
-            </a>
-            <ul class="dropdown-menu">
-                <li>เพิ่มบุคลากร</li>
-                <li>จัดกลุ่มบุคลากร</li>
+                <li>ข้อมูลสินค้า</li>
+                <li>ข้อมูลการขาย</li>
+                <li>ยอดสั่ง</li>
             </ul>
         </li>
         <li>

@@ -3,7 +3,7 @@
 <?php include ('./componant/aside-template.php'); ?>
 <article>
     <section id="box-container">
-        <h4><i class="fa-solid fa-database"></i> เพิ่มข้อมูลเจ้าหน้าที่ / คุณครู</h4>
+        <h4><i class="fa-solid fa-database"></i> เพิ่มข้อมูลเจ้าหน้าที่ / พนักงาน</h4>
     </section>
     <section id="box-container">
         <div class="form-grid-2">
@@ -31,8 +31,13 @@
                 <label for="" class="label-1">Password</label>
                 <input type="text" class="w3-input w3-border" name="PER_PASSWORD">
             </div>
+            <div class="form-group">
+                <label for="" class="label-1 line b">สถานะ</label> : &nbsp;
+                <input type="radio" class="" name="CUS"> พนักงาน &nbsp;
+                <input type="radio" class="" name="ADMIN"> ผู้ดูแลระบบ
+            </div>
         </div>
-        <button class="w3-button w3-blue">บันทึก</button>
+        <button class="w3-button w3-blue" type="submit">บันทึก</button>
         <div class="list-table">
             <table class="w3-table-all">
                 <thead>
@@ -92,4 +97,4 @@
 
 </div>
 
-<script src="./public/js/service_teacher.js"></script>
+<script src="./public/javascript/service_teacher.js"></script>

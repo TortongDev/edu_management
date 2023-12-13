@@ -1,5 +1,5 @@
 
-const btn = document.querySelector('button').addEventListener('click', ()=>{
+const btn = document.querySelector('form').addEventListener('submit', ()=>{
     Swal.fire({
         title: 'Test',
         text: 'Body Test',

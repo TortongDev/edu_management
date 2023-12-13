@@ -5,8 +5,6 @@
     $URI_FILTER = explode('/', $URI);
     $URI_FILTER = end($URI_FILTER);
     $FILE_NAME = '/'.$URI_FILTER;
-	
-	
     $PACTH = array(
         '/index'        => '/src/dashboard.php',
         '/report'       => '/src/dashboard.php',
