@@ -38,13 +38,15 @@
     }
 </style>
 
-<div class="aside">
+<div class="aside full-height">
     <div class="tem-card">
         <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" style="width: 180px; margin: auto;" alt="card-profile">
         <div class="profile-container">
             
-            <p>Status: Super Admin</p>
-            <p>Mr.Kitithat  Charoenkhet</p>
+            <p style="color:green;"><b><i class="fa fa-dot-circle-o"></i> กำลังออนไลน์</b></p>
+            <p><b>สิทธิ์การใช้งาน</b> : Super Admin</p>
+            <p><b>ชื่อ</b> : Mr.Kitithat  Charoenkhet</p>
+            
         </div>
     </div>
     <div class="tem-container">

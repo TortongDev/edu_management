@@ -98,3 +98,4 @@
 </div>
 
 <script src="./public/javascript/service_teacher.js"></script>
+<?php include ('./componant/footer-template.php') ?>

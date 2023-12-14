@@ -1,8 +1,10 @@
 
-<?php include("./componant/header-template.php") ?>
-<article class="grid-main">
-    <?php include("./componant/aside-template.php") ?>    
-    <section id="section-container">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, pariatur!
-    </section>
-</article>
+<?php include ('./componant/header-template.php'); ?>
+<div class="grid-main">
+    <?php include ('./componant/aside-template.php'); ?>
+    <article>
+        <section id="section-container">
+            <h4><i class='fas fa-folder'></i> Function Management</h4>
+        </section>
+    </article>
+</div>
