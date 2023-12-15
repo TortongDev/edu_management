@@ -1,5 +1,5 @@
 <?php
-require_once dirname(dirname(__DIR__))."/config/config-database.php";
+require_once dirname(__DIR__)."/config/config-database.php";
 class Connection {
     private $hostname = HOSTNAME;
     private $username = USERNAME;

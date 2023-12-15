@@ -25,6 +25,7 @@ html,body {
     --bgFolderMenu: rgb(237, 237, 237);
     --bgFolderMenu1: rgb(210, 206, 252);
     --bgFolderMenu2: rgb(196, 184, 240);
+    --bgSlideMenu: #e8e9ee;
 }
 .box-shadow {
     box-shadow: 1px 1px 10px silver;
@@ -143,6 +144,27 @@ ul.mobile {
     text-decoration: none !important;
     font-size: 1.2rem !important;
 }
+.close-slide {
+    width: 0;
+    height: 100%;
+    background-color: var(--bgSlideMenu);
+    display: block;
+    position: fixed;
+    transition: 1s;
+    top: 100px;
+    overflow: hidden;
+}
+.on-open {
+    width: 100% !important;
+    background: var(--bgSlideMenu);
+}
+.mobile-list {
+    display: block;
+}
+.mobile-list li {
+    display: block;
+}
+
 @media only screen and (max-width: 600px) {
     body , html {
         width: 100%;

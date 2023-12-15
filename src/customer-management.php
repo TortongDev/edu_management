@@ -6,7 +6,8 @@
         <h4><i class="fa-solid fa-database"></i> เพิ่มข้อมูลเจ้าหน้าที่ / พนักงาน</h4>
     </section>
     <section id="box-container">
-        <div class="form-grid-2">
+    <form action="" method="post">    
+    <div class="form-grid-2">
             <div class="form-group">
                 <label for="" class="label-1">ชื่อ</label>
                 <input type="text" class="w3-input w3-border" name="PER_FNAME">
@@ -96,6 +97,7 @@
 </article>
 
 </div>
-
+</form>
+    
 <script src="./public/javascript/service_teacher.js"></script>
 <?php include ('./componant/footer-template.php') ?>

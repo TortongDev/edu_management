@@ -9,11 +9,11 @@
             self::$pdo = $pdo;
         }
 		
-        public function saveCustomer($first_name,$last_name,$per_email,$per_phone,$username,$password){
+        public function saveCustomer($username,$password){
 			try {				
-				$sql_stmt = "INSERT INTO tb_customers_user () VALUES ()";
+				$sql_stmt = "INSERT INTO authen_admin ( `authen_username`, `authen_password`, `authen_status`) VALUES (?,?,?)";
 				$insert_stmt = self::$pdo->prepare($sql_stmt);
-				$insert_stmt ->execute([$first_name,$last_name,$per_email,$per_phone,$username,$password]);
+				$insert_stmt ->execute([$username,$password,'1']);
 				echo json_encode(array('status' => 1));
 				
 			}catch(PDOException $err){
