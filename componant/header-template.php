@@ -75,7 +75,7 @@
     </ul>
     <div class="close-slide">
         <ul class="mobile-list">
-        <li><a href="index">หน้าหลัก</a></li>
+        <li><a href="">หน้าหลัก</a></li>
         <li style="position: relative">
             <a href="#">จัดการข้อมูลเจ้าหน้าที่
                 <i class="fa-solid fa-caret-down"></i>
@@ -121,7 +121,7 @@
         </ul>
     </div>
     <ul class="desktop">
-        <li><a href="index">หน้าหลัก</a></li>
+        <li><a href="">หน้าหลัก</a></li>
         <li style="position: relative">
             <a href="#">จัดการข้อมูลเจ้าหน้าที่
                 <i class="fa-solid fa-caret-down"></i>

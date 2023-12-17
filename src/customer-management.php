@@ -1,4 +1,7 @@
-<?php include ('./componant/header-template.php'); ?>
+<?php
+
+
+ include ('./componant/header-template.php'); ?>
 <div class="grid-main">
 <?php include ('./componant/aside-template.php'); ?>
 <article>
@@ -10,32 +13,32 @@
     <div class="form-grid-2">
             <div class="form-group">
                 <label for="" class="label-1">ชื่อ</label>
-                <input type="text" class="w3-input w3-border" name="PER_FNAME">
+                <input type="text" class="w3-input w3-border" name="FIRST_NAME">
             </div>
             <div class="form-group">
                 <label for="" class="label-1">นามสกุล</label>
-                <input type="text" class="w3-input w3-border" name="PER_LNAME">
+                <input type="text" class="w3-input w3-border" name="LAST_NAME">
             </div>
             <div class="form-group">
                 <label for="" class="label-1">อีเมล</label>
-                <input type="text" class="w3-input w3-border" name="PER_EMAIL">
+                <input type="text" class="w3-input w3-border" name="EMAIL">
             </div>
             <div class="form-group">
                 <label for="" class="label-1">เบอร์โทรศัพท์</label>
-                <input type="text" class="w3-input w3-border" name="PER_TEL">
+                <input type="text" class="w3-input w3-border" name="PHONE_NUMBER">
             </div>
             <div class="form-group">
                 <label for="" class="label-1">Username</label>
-                <input type="text" class="w3-input w3-border" name="PER_USERNAME">
+                <input type="text" class="w3-input w3-border" name="USERNAME">
             </div>
             <div class="form-group">
                 <label for="" class="label-1">Password</label>
-                <input type="text" class="w3-input w3-border" name="PER_PASSWORD">
+                <input type="text" class="w3-input w3-border" name="PASSWORD">
             </div>
             <div class="form-group">
                 <label for="" class="label-1 line b">สถานะ</label> : &nbsp;
-                <input type="radio" class="" name="CUS"> พนักงาน &nbsp;
-                <input type="radio" class="" name="ADMIN"> ผู้ดูแลระบบ
+                <input type="radio" class="" value="2" name="PER_STATUS"> พนักงาน &nbsp;
+                <input type="radio" class="" value="1" name="PER_STATUS"> ผู้ดูแลระบบ
             </div>
         </div>
         <button class="w3-button w3-blue" type="submit">บันทึก</button>
@@ -53,42 +56,30 @@
                     </tr>
                 </thead>
                 <tbody>
-                   <tr>
-                        <td>1</td>
-                        <td>Kittithat Charoenkhet</td>
-                        <td>tortong@gmail.com</td>
-                        <td>000-000-0000</td>
-                        <td>tortong91</td>
-                        <td>123456</td>
+                    <?php
+                    require_once "./class/Connection.php";
+                    require_once "./class/SelectService.php";
+
+                    $conn = new Connection(true);
+                    $stmt_select = new SelectService(Connection::$pdo);
+                    $fetch = $stmt_select->SelectTable('SELECT * FROM `authen_admin` WHERE ?',array(1));
+                    $number = 1;
+                    while ($row = $fetch->fetch(PDO::FETCH_ASSOC)):
+                    ?>
+                    <tr>
+                        <td><?php echo $number++; ?></td>
+                        <td><?php echo $row['authen_username']; ?></td>
+                        <td><?php echo $row['authen_username']; ?></td>
+                        <td><?php echo $row['authen_username']; ?></td>
+                        <td><?php echo $row['authen_username']; ?></td>
+                        <td><?php echo $row['authen_username']; ?></td>
                         <td>
-                            <button class="w3-button w3-orange w3-tiny">แก้ไข</button>
+                            <a href="./form/edit-customer.php?<?php echo $row['authen_username']; ?>" class="w3-button w3-orange w3-tiny">แก้ไข</a>
                             <button class="w3-button w3-red w3-tiny">ลบ</button>
                         </td>
                    </tr>
-                   <tr>
-                        <td>2</td>
-                        <td>Kittithat Charoenkhet</td>
-                        <td>tortong@gmail.com</td>
-                        <td>000-000-0000</td>
-                        <td>tortong91</td>
-                        <td>123456</td>
-                        <td>
-                            <button class="w3-button w3-orange w3-tiny">แก้ไข</button>
-                            <button class="w3-button w3-red w3-tiny">ลบ</button>
-                        </td>
-                   </tr>
-                   <tr>
-                        <td>3</td>
-                        <td>Kittithat Charoenkhet</td>
-                        <td>tortong@gmail.com</td>
-                        <td>000-000-0000</td>
-                        <td>tortong91</td>
-                        <td>123456</td>
-                        <td>
-                            <button class="w3-button w3-orange w3-tiny">แก้ไข</button>
-                            <button class="w3-button w3-red w3-tiny">ลบ</button>
-                        </td>
-                   </tr>
+
+                   <?php endwhile; ?>
                 </tbody>
             </table>
         </div>
