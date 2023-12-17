@@ -121,14 +121,19 @@
         </ul>
     </div>
     <ul class="desktop">
-        <li><a href="">หน้าหลัก</a></li>
+        <?php
+            $linkToIndex = $router->generate('index');
+            $customer = $router->generate('customer');
+            $groupCustomer = $router->generate('group-customer');
+        ?>
+        <li><a href="<?php echo $linkToIndex; ?>">หน้าหลัก</a></li>
         <li style="position: relative">
             <a href="#">จัดการข้อมูลเจ้าหน้าที่
                 <i class="fa-solid fa-caret-down"></i>
             </a>
             <ul class="dropdown-menu">
-                <li><a href="customer">เพิ่มเจ้าหน้าที่</a></li>
-                <li><a href="group-customer">จัดกลุ่มเจ้าหน้าที่</a></li>
+                <li><a href="<?php echo $customer; ?> ">เพิ่มเจ้าหน้าที่</a></li>
+                <li><a href="<?php echo $groupCustomer; ?>">จัดกลุ่มเจ้าหน้าที่</a></li>
 
             </ul>
         </li>

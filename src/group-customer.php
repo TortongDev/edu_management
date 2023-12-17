@@ -1,5 +1,4 @@
 
-<?php include ('./componant/header-template.php'); ?>
 <div class="grid-main">
     <?php include ('./componant/aside-template.php'); ?>
     <article>
