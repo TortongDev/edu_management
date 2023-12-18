@@ -71,7 +71,7 @@
                         <td><?php echo $row['authen_username']; ?></td>
                         <td><?php echo $row['authen_username']; ?></td>
                         <td>
-                            <a href="./form/edit-customer.php?<?php echo $row['authen_username']; ?>" class="w3-button w3-orange w3-tiny">แก้ไข</a>
+                            <a href="editCustomer/2" class="w3-button w3-orange w3-tiny">แก้ไข</a>
                             <button class="w3-button w3-red w3-tiny">ลบ</button>
                         </td>
                    </tr>
